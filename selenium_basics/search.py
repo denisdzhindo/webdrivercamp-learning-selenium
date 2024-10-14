@@ -69,6 +69,8 @@ for item in items:
 for i,mismatch in enumerate(mismatches):
     print(i + 1, mismatch)
 
+driver.close()
+
 
 
 
