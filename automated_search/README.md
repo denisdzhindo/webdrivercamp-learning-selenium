@@ -3,7 +3,8 @@ Python Automation project
 Framework: Selenium | ChromeDriver   
 Implementation: Pycharm  
 
-Open eBay watch page ( Watch for sale | eBay ) and select option Brand / Rolex in Filter pane  
+Open eBay watch page https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=watch&_sacat=0   
+( Watch for sale | eBay ) and select option Brand / Rolex in Filter pane  
 Verify the first two result items contain “rolex” in their title  
 Store title and price of the first two results in a variable  
 Open item in a new tab and verify the title and the price by comparing them with the stored data  
