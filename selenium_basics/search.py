@@ -39,16 +39,16 @@ driver.close()'''
 # Print URL
 # Type “women watch” into search field
 # Press search
-# Verify the header contains “results for women watch“
+# Verify the header contains "results for women watch"
 # Close browser
 
 driver.get('https://www.ebay.com')
 wait = WebDriverWait(driver, 15)
-element = wait.until(expected_conditions.visibility_of_element_located((By.XPATH, "//header[@class='gh-ui-6-5 gh-w gh-sch-prom ghx-evoa gh-simpleH']//td[@class='gh-td'][h1]")))
+element = wait.until(expected_conditions.visibility_of_element_located((By.XPATH, "//header[@class='gh-ui-6-5 gh-w gh-sch-prom ghx-evoa gh-simpleH']//td[@class='gh-td']//h1")))
 print(driver.current_url)
-search_field = driver.find_element(By.XPATH, "//table[@class='gh-tbl2']//input[@class='gh-tb ui-autocomplete-input']")
+search_field = driver.find_element(By.XPATH, "//input[@id='gh-ac']")
 search_field.send_keys("women watch")
-search_button = driver.find_element(By.XPATH, "//input[@class='btn btn-prim gh-spr']")
+search_button = driver.find_element(By.XPATH, "//input[@id='gh-btn']")
 search_button.click()
 sleep(3)
 
