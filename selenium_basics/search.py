@@ -65,10 +65,12 @@ for item in items:
     title = item.text.lower()
     if item_title not in title:
         mismatches.append(title)
+        count += 1
 
 for i,mismatch in enumerate(mismatches):
     print(i + 1, mismatch)
 
+print(f"\nMismatches total found: {count}")
 driver.close()
 
 
