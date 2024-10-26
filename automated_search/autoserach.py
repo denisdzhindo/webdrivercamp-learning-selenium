@@ -73,7 +73,6 @@ titles = driver.find_elements(By.XPATH, "//li[@class='s-item s-item__pl-on-botto
 test = "casio"
 cut = titles[-2:]
 result = brand_in_title(test, cut)
-
 if len(result[0]) > 0:
      print(f"Brand {test} is not found in: {result[1]} titles:")
      for index, mismatch in enumerate(result[0]):
