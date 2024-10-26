@@ -25,7 +25,7 @@ test = "rolex"
 cut = titles[:2]
 result = brand_in_title(test, cut)
 if len(result[0]) > 0:
-     print(f"Brand {test} is not found in: {result[1]} titles:")
+     print(f'Brand "{test.capitalize()}" is not found in: {result[1]} titles:')
      for index, mismatch in enumerate(result[0]):
          print(index + 1, mismatch)
 
@@ -73,7 +73,7 @@ test = "casio"
 cut = titles[-2:]
 result = brand_in_title(test, cut)
 if len(result[0]) > 0:
-     print(f"Brand {test} is not found in: {result[1]} titles:")
+     print(f'Brand "{test.capitalize()}" is not found in: {result[1]} titles:')
      for index, mismatch in enumerate(result[0]):
          print(index + 1, mismatch)
 
