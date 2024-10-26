@@ -1,4 +1,5 @@
 Python Automation project: Verification Select option on Ebay results  
+
 Framework: Selenium | ChromeDriver   
 Implementation: Pycharm  
 
