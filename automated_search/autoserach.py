@@ -11,7 +11,6 @@ brand_rolex_filter.click()
 titles = driver.find_elements(By.XPATH, "//ul[@class='srp-results srp-grid clearfix']//a[@class='s-item__link']//span[@role='heading']")
 
 # Verify the first two result items contain “rolex” in their title
-# old school for practice:)
 def brand_in_title(check_, slice_):
  mismatches = []
  count = 0
