@@ -44,9 +44,9 @@ title_item_1_page = driver.find_element(By.XPATH, "//h1[@class='x-item-title__ma
 price_item_1_page = driver.find_element(By.XPATH, "//div[@class='x-price-primary']/span[@class='ux-textspans']")
 price_item_1_page = float(price_item_1_page.text.replace("US $", "").replace(",", ""))
 if title_item_1_page != title_item_1:
-    print(f"Title on the item page does not match with the main results page: \nMain page title:{title_item_1}\nItem page title:{title_item_1_page}")
+    print(f"Title on the item page does not match with the main results page:\nMain page title: {title_item_1}\nItem page title: {title_item_1_page}")
 if price_item_1_page != price_item_1:
-    print(f"Price on the itme page doesn't match with the price on the main results page: \nMain page price:{price_item_1}\nItem page price:{price_item_1_page}")
+    print(f"Price on the itme page doesn't match with the price on the main results page:\nMain page price: {price_item_1}\nItem page price: {price_item_1_page}")
 driver.close()
 
 driver.switch_to.window(driver.window_handles[0])
@@ -56,9 +56,9 @@ title_item_2_page = driver.find_element(By.XPATH, "//h1[@class='x-item-title__ma
 price_item_2_page = driver.find_element(By.XPATH, "//div[@class='x-price-primary']/span[@class='ux-textspans']")
 price_item_2_page = float(price_item_2_page.text.replace("US $", "").replace(",", ""))
 if title_item_2_page != title_item_2:
-    print(f"Title on the item page does not match with the main results page: \nMain page title:{title_item_2}\nItem page title:{title_item_2_page}")
+    print(f"Title on the item page does not match with the main results page:\nMain page title: {title_item_2}\nItem page title: {title_item_2_page}")
 if price_item_1_page != price_item_1:
-    print(f"Price on the itme page doesn't match with the price on the main results page: \nMain page price:{price_item_2}\nItem page price:{price_item_2_page}")
+    print(f"Price on the itme page doesn't match with the price on the main results page:\nMain page price: {price_item_2}\nItem page price: {price_item_2_page}")
 driver.close()
 
 # Uncheck "Rolex" option and check "Casio" option. Verify the last two result items contain "Casio" in their title
