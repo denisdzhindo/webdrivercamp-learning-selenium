@@ -38,7 +38,6 @@ price_item_2 = float(prices[1].text.replace("$", "").replace(",", ""))
 
 
 # Open item in a new tab and verify the title and the price by comparing them with the stored data
-
 titles[0].click() # open the first item tab
 driver.switch_to.window(driver.window_handles[1])
 title_item_1_page = driver.find_element(By.XPATH, "//h1[@class='x-item-title__mainTitle']").text
